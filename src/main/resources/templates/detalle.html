@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF8">
+<title>Detalle de la vacante de empleo</title>
+</head>
+<body>
+
+<h1>Página de detalle de vacante de empleo</h1>
+
+<h2 th:text="${mensaje}"></h2>
+<h3 th:text= "'La fecha del sistema es: ' + ${fecha}"></h3>
+<h3> La fecha del sistema es [[${fecha}]]</h3>
+<br>
+<hr>
+		
+		<h4><b>Nombre de la oferta: </b><i th:text=${nombreoferta}></i></h4>
+		<h4><b>Fecha de publicacion: </b><i th:text=${fechapublicaion}></i></h4>
+		<h4><b>Salario ofertado: </b><i th:text=${salarioofertado}></i></h4>
+		<h4><b>Oferta vigente: </b><i th:text=${estavigente}></i></h4>
+
+</body>
+</html>
